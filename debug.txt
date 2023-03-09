@@ -1,0 +1,626 @@
+ WARN: Config needs migrating
+       "originalConfig": {
+         "endpoint": "https://api.github.com/",
+         "token": "***********",
+         "platform": "github",
+         "logLevel": "debug",
+         "onboardingConfig": {"extends": ["config:base", ":dependencyDashboard"]},
+         "repositories": ["vaemsdev/reno-py"],
+         "renovateFork": true,
+         "gitAuthor": "VAEMSDEV <vaemsdev@gmail.com>",
+         "username": "vaemsdev",
+         "onboarding": false,
+         "printConfig": true,
+         "requireConfig": false,
+         "packageRules": [
+           {
+             "matchDepTypes": ["devDependencies"],
+             "matchUpdateTypes": ["patch", "minor"],
+             "groupName": "Dependencies (non-major)"
+           }
+         ]
+       },
+       "migratedConfig": {
+         "endpoint": "https://api.github.com/",
+         "token": "***********",
+         "platform": "github",
+         "logLevel": "debug",
+         "onboardingConfig": {"extends": ["config:base", ":dependencyDashboard"]},
+         "repositories": ["vaemsdev/reno-py"],
+         "includeForks": true,
+         "gitAuthor": "VAEMSDEV <vaemsdev@gmail.com>",
+         "username": "vaemsdev",
+         "onboarding": false,
+         "printConfig": true,
+         "requireConfig": "optional",
+         "packageRules": [
+           {
+             "matchDepTypes": ["devDependencies"],
+             "matchUpdateTypes": ["patch", "minor"],
+             "groupName": "Dependencies (non-major)"
+           }
+         ]
+       }
+ INFO: Please upgrade the version of Node.js used to run Renovate to satisfy ">= 18.12.0". Support for your current version will be removed in Renovate's next major release.
+       "versions": {
+         "node": "16.19.1",
+         "v8": "9.4.146.26-node.24",
+         "uv": "1.43.0",
+         "zlib": "1.2.11",
+         "brotli": "1.0.9",
+         "ares": "1.18.1",
+         "modules": "93",
+         "nghttp2": "1.47.0",
+         "napi": "8",
+         "llhttp": "6.0.10",
+         "openssl": "1.1.1t+quic",
+         "cldr": "41.0",
+         "icu": "71.1",
+         "tz": "2022f",
+         "unicode": "14.0",
+         "ngtcp2": "0.8.1",
+         "nghttp3": "0.7.0"
+       }
+ INFO: Repository started (repository=vaemsdev/reno-py)
+       "renovateVersion": "34.157.1"
+ INFO: Full resolved config and hostRules including presets (repository=vaemsdev/reno-py)
+       "config": {
+         "detectGlobalManagerConfig": false,
+         "detectHostRulesFromEnv": false,
+         "postUpgradeTasks": {
+           "commands": [],
+           "fileFilters": [],
+           "executionMode": "update"
+         },
+         "onboardingBranch": "renovate/configure",
+         "onboardingCommitMessage": null,
+         "onboardingConfigFileName": "renovate.json",
+         "onboardingNoDeps": false,
+         "onboardingPrTitle": "Configure Renovate",
+         "configMigration": false,
+         "productLinks": {
+           "documentation": "https://docs.renovatebot.com/",
+           "help": "https://github.com/renovatebot/renovate/discussions",
+           "homepage": "https://github.com/renovatebot/renovate"
+         },
+         "globalExtends": [],
+         "description": [],
+         "enabled": true,
+         "repositoryCache": "disabled",
+         "repositoryCacheType": "local",
+         "force": {},
+         "draftPR": false,
+         "printConfig": true,
+         "composerIgnorePlatformReqs": [],
+         "onboarding": false,
+         "onboardingConfig": {
+           "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+           "extends": ["config:base", ":dependencyDashboard"]
+         },
+         "onboardingRebaseCheckbox": false,
+         "includeForks": true,
+         "forkToken": null,
+         "requireConfig": "optional",
+         "optimizeForDisabled": false,
+         "dependencyDashboard": false,
+         "dependencyDashboardApproval": false,
+         "dependencyDashboardAutoclose": false,
+         "dependencyDashboardTitle": "Dependency Dashboard",
+         "dependencyDashboardHeader": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.",
+         "dependencyDashboardFooter": null,
+         "dependencyDashboardLabels": null,
+         "configWarningReuseIssue": true,
+         "privateKeyPath": null,
+         "privateKeyPathOld": null,
+         "encrypted": null,
+         "timezone": null,
+         "schedule": ["at any time"],
+         "automergeSchedule": ["at any time"],
+         "updateNotScheduled": true,
+         "persistRepoData": false,
+         "ignorePlugins": false,
+         "ignoreScripts": true,
+         "password": null,
+         "npmrc": null,
+         "npmrcMerge": false,
+         "npmToken": null,
+         "updateLockFiles": true,
+         "skipInstalls": null,
+         "baseBranches": [],
+         "useBaseBranchConfig": "none",
+         "gitAuthor": "VAEMSDEV <vaemsdev@gmail.com>",
+         "gitIgnoredAuthors": [],
+         "enabledManagers": [],
+         "includePaths": [],
+         "ignorePaths": ["**/node_modules/**", "**/bower_components/**"],
+         "excludeCommitPaths": [],
+         "registryAliases": {},
+         "defaultRegistryUrls": null,
+         "registryUrls": null,
+         "extractVersion": null,
+         "versioning": null,
+         "azureWorkItemId": 0,
+         "azureAutoApprove": false,
+         "ignoreDeps": [],
+         "updateInternalDeps": false,
+         "packageRules": [
+           {
+             "matchDepTypes": ["devDependencies"],
+             "matchUpdateTypes": ["patch", "minor"],
+             "groupName": "Dependencies (non-major)"
+           },
+           {"matchPackageNames": ["@testing-library"], "groupName": "testing-library"}
+         ],
+         "pinDigests": false,
+         "separateMajorMinor": true,
+         "separateMultipleMajor": false,
+         "separateMinorPatch": false,
+         "ignoreUnstable": true,
+         "ignoreDeprecated": true,
+         "followTag": null,
+         "respectLatest": true,
+         "rangeStrategy": "replace",
+         "branchPrefix": "renovate/",
+         "branchPrefixOld": "renovate/",
+         "bumpVersion": null,
+         "major": {},
+         "minor": {},
+         "patch": {},
+         "pin": {
+           "rebaseWhen": "behind-base-branch",
+           "groupName": "Pin Dependencies",
+           "groupSlug": "pin-dependencies",
+           "commitMessageAction": "Pin",
+           "group": {"commitMessageTopic": "dependencies", "commitMessageExtra": ""}
+         },
+         "digest": {
+           "branchTopic": "{{{depNameSanitized}}}-digest",
+           "commitMessageExtra": "to {{newDigestShort}}",
+           "commitMessageTopic": "{{{depName}}} digest"
+         },
+         "pinDigest": {
+           "groupName": "Pin Dependencies",
+           "groupSlug": "pin-dependencies",
+           "commitMessageAction": "Pin",
+           "group": {"commitMessageTopic": "dependencies", "commitMessageExtra": ""}
+         },
+         "rollback": {
+           "branchTopic": "{{{depNameSanitized}}}-rollback",
+           "commitMessageAction": "Roll back",
+           "semanticCommitType": "fix"
+         },
+         "replacement": {
+           "branchTopic": "{{{depNameSanitized}}}-replacement",
+           "commitMessageAction": "Replace",
+           "commitMessageExtra": "with {{newName}} {{#if isMajor}}{{{prettyNewMajor}}}{{else}}{{#if isSingleVersion}}{{{prettyNewVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}",
+           "prBodyNotes": [
+             "This is a special PR that replaces `{{{depNameSanitized}}}` with the community suggested minimal stable replacement version."
+           ]
+         },
+         "semanticCommits": "auto",
+         "semanticCommitType": "chore",
+         "semanticCommitScope": "deps",
+         "rollbackPrs": false,
+         "recreateClosed": false,
+         "rebaseWhen": "auto",
+         "rebaseLabel": "rebase",
+         "stopUpdatingLabel": "stop-updating",
+         "stabilityDays": 0,
+         "internalChecksFilter": "strict",
+         "prCreation": "immediate",
+         "prNotPendingHours": 25,
+         "prHourlyLimit": 0,
+         "prConcurrentLimit": 0,
+         "branchConcurrentLimit": null,
+         "prPriority": 0,
+         "bbUseDefaultReviewers": true,
+         "automerge": false,
+         "automergeType": "pr",
+         "automergeStrategy": "auto",
+         "automergeComment": "automergeComment",
+         "ignoreTests": false,
+         "transitiveRemediation": false,
+         "vulnerabilityAlerts": {
+           "groupName": null,
+           "schedule": [],
+           "dependencyDashboardApproval": false,
+           "stabilityDays": 0,
+           "rangeStrategy": "update-lockfile",
+           "commitMessageSuffix": "[SECURITY]",
+           "branchTopic": "{{{datasource}}}-{{{depName}}}-vulnerability",
+           "prCreation": "immediate"
+         },
+         "osvVulnerabilityAlerts": false,
+         "pruneBranchAfterAutomerge": true,
+         "branchName": "{{{branchPrefix}}}{{{additionalBranchPrefix}}}{{{branchTopic}}}",
+         "additionalBranchPrefix": "",
+         "branchTopic": "{{{depNameSanitized}}}-{{{newMajor}}}{{#if separateMinorPatch}}{{#if isPatch}}.{{{newMinor}}}{{/if}}{{/if}}.x{{#if isLockfileUpdate}}-lockfile{{/if}}",
+         "commitMessage": "{{{commitMessagePrefix}}} {{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}} {{{commitMessageSuffix}}}",
+         "commitBody": null,
+         "commitBodyTable": false,
+         "commitMessagePrefix": null,
+         "commitMessageAction": "Update",
+         "commitMessageTopic": "dependency {{depName}}",
+         "commitMessageExtra": "to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+         "commitMessageSuffix": null,
+         "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{controls}}}{{{footer}}}",
+         "prTitle": null,
+         "prHeader": null,
+         "prFooter": "This PR has been generated by [Renovate Bot](https://github.com/renovatebot/renovate).",
+         "lockFileMaintenance": {
+           "enabled": false,
+           "recreateClosed": true,
+           "rebaseStalePrs": true,
+           "branchTopic": "lock-file-maintenance",
+           "commitMessageAction": "Lock file maintenance",
+           "commitMessageTopic": null,
+           "commitMessageExtra": null,
+           "schedule": ["before 5am on monday"],
+           "groupName": null,
+           "prBodyDefinitions": {"Change": "All locks refreshed"}
+         },
+         "hashedBranchLength": null,
+         "groupName": null,
+         "groupSlug": null,
+         "group": {
+           "branchTopic": "{{{groupSlug}}}",
+           "commitMessageTopic": "{{{groupName}}}"
+         },
+         "labels": [],
+         "addLabels": [],
+         "assignees": [],
+         "assigneesFromCodeOwners": false,
+         "assigneesSampleSize": null,
+         "assignAutomerge": false,
+         "ignoreReviewers": [],
+         "reviewers": [],
+         "reviewersFromCodeOwners": false,
+         "filterUnavailableUsers": false,
+         "forkModeDisallowMaintainerEdits": false,
+         "confidential": false,
+         "reviewersSampleSize": null,
+         "additionalReviewers": [],
+         "fileMatch": [],
+         "js": {},
+         "golang": {"commitMessageTopic": "module {{depName}}"},
+         "postUpdateOptions": [],
+         "ruby": {},
+         "rust": {},
+         "node": {"commitMessageTopic": "Node.js"},
+         "docker": {"versioning": "docker"},
+         "php": {},
+         "python": {},
+         "constraints": {},
+         "java": {},
+         "dotnet": {},
+         "hostRules": [],
+         "prBodyDefinitions": {
+           "Package": "{{{depNameLinked}}}",
+           "Type": "{{{depType}}}",
+           "Update": "{{{updateType}}}",
+           "Current value": "{{{currentValue}}}",
+           "New value": "{{{newValue}}}",
+           "Change": "`{{{displayFrom}}}` -> `{{{displayTo}}}`",
+           "Pending": "{{{displayPending}}}",
+           "References": "{{{references}}}",
+           "Package file": "{{{packageFile}}}"
+         },
+         "prBodyColumns": ["Package", "Type", "Update", "Change", "Pending"],
+         "prBodyNotes": [],
+         "suppressNotifications": ["deprecationWarningIssues"],
+         "pruneStaleBranches": true,
+         "unicodeEmoji": true,
+         "gitLabIgnoreApprovals": false,
+         "regexManagers": [],
+         "fetchReleaseNotes": true,
+         "cloneSubmodules": false,
+         "ignorePrAuthor": false,
+         "updatePinnedDependencies": true,
+         "gitUrl": "default",
+         "writeDiscoveredRepos": null,
+         "platformAutomerge": false,
+         "userStrings": {
+           "ignoreTopic": "Renovate Ignore Notification",
+           "ignoreMajor": "As this PR has been closed unmerged, Renovate will ignore this upgrade and you will not receive PRs for *any* future {{{newMajor}}}.x releases. However, if you upgrade to {{{newMajor}}}.x manually then Renovate will reenable minor and patch updates automatically.",
+           "ignoreDigest": "As this PR has been closed unmerged, Renovate will ignore this upgrade and you will not receive PRs for the `{{{depName}}}` `{{{newDigestShort}}}` update again.",
+           "ignoreOther": "As this PR has been closed unmerged, Renovate will now ignore this update ({{{newValue}}}). You will still receive a PR once a newer version is released, so if you wish to permanently ignore this dependency, please add it to the `ignoreDeps` array of your renovate config."
+         },
+         "platformCommit": false,
+         "branchNameStrict": false,
+         "ansible": {"fileMatch": ["(^|/)tasks/[^/]+\\.ya?ml$"]},
+         "ansible-galaxy": {
+           "fileMatch": ["(^|/)requirements\\.ya?ml$", "(^|/)galaxy\\.ya?ml$"]
+         },
+         "argocd": {"fileMatch": []},
+         "asdf": {"fileMatch": ["(^|/)\\.tool-versions$"]},
+         "azure-pipelines": {
+           "fileMatch": ["azure.*pipelines?.*\\.ya?ml$"],
+           "enabled": false
+         },
+         "batect": {"fileMatch": ["(^|/)batect(-bundle)?\\.yml$"]},
+         "batect-wrapper": {"fileMatch": ["(^|/)batect$"], "versioning": "semver"},
+         "bazel": {"fileMatch": ["(^|/)WORKSPACE(|\\.bazel)$", "\\.bzl$"]},
+         "bazelisk": {"fileMatch": ["(^|\\/)\\.bazelversion$"], "pinDigests": false},
+         "bitbucket-pipelines": {
+           "fileMatch": ["(^|/)\\.?bitbucket-pipelines\\.ya?ml$"]
+         },
+         "buildkite": {
+           "fileMatch": ["buildkite\\.ya?ml", "\\.buildkite/.+\\.ya?ml$"],
+           "commitMessageTopic": "buildkite plugin {{depName}}",
+           "commitMessageExtra": "to {{#if isMajor}}{{{prettyNewMajor}}}{{else}}{{{newValue}}}{{/if}}"
+         },
+         "bundler": {"fileMatch": ["(^|/)Gemfile$"], "versioning": "ruby"},
+         "cake": {"fileMatch": ["\\.cake$"]},
+         "cargo": {
+           "commitMessageTopic": "Rust crate {{depName}}",
+           "fileMatch": ["(^|/)Cargo\\.toml$"],
+           "versioning": "cargo",
+           "rangeStrategy": "bump"
+         },
+         "cdnurl": {"fileMatch": [], "versioning": "semver"},
+         "circleci": {"fileMatch": ["(^|/)\\.circleci/config\\.yml$"]},
+         "cloudbuild": {"fileMatch": ["(^|/)cloudbuild\\.ya?ml"]},
+         "cocoapods": {"fileMatch": ["(^|/)Podfile$"], "versioning": "ruby"},
+         "composer": {
+           "fileMatch": ["(^|/)([\\w-]*)composer\\.json$"],
+           "versioning": "composer"
+         },
+         "conan": {
+           "fileMatch": ["(^|/)conanfile\\.(txt|py)$"],
+           "datasource": "conan",
+           "versioning": "conan",
+           "rangeStrategy": "bump",
+           "enabled": false
+         },
+         "deps-edn": {"fileMatch": ["(^|/)(?:deps|bb)\\.edn$"], "versioning": "maven"},
+         "docker-compose": {"fileMatch": ["(^|/)(?:docker-)?compose[^/]*\\.ya?ml$"]},
+         "dockerfile": {
+           "fileMatch": ["(^|/|\\.)Dockerfile$", "(^|/)Dockerfile[^/]*$"]
+         },
+         "droneci": {"fileMatch": ["(^|/)\\.drone\\.yml$"]},
+         "fleet": {"fileMatch": ["(^|/)fleet\\.ya?ml"]},
+         "flux": {
+           "fileMatch": ["(^|\\/)flux-system\\/(?:.+\\/)?gotk-components\\.yaml$"]
+         },
+         "fvm": {
+           "fileMatch": ["(^|\\/)\\.fvm\\/fvm_config\\.json$"],
+           "versioning": "semver"
+         },
+         "git-submodules": {
+           "enabled": false,
+           "versioning": "git",
+           "fileMatch": ["(^|/)\\.gitmodules$"]
+         },
+         "github-actions": {
+           "fileMatch": [
+             "^(workflow-templates|\\.github\\/workflows)\\/[^/]+\\.ya?ml$",
+             "(^|\\/)action\\.ya?ml$"
+           ]
+         },
+         "gitlabci": {"fileMatch": ["\\.gitlab-ci\\.yml$"]},
+         "gitlabci-include": {"fileMatch": ["\\.gitlab-ci\\.yml$"]},
+         "gomod": {"fileMatch": ["(^|/)go\\.mod$"]},
+         "gradle": {
+           "fileMatch": [
+             "\\.gradle(\\.kts)?$",
+             "(^|\\/)gradle\\.properties$",
+             "(^|\\/)gradle\\/.+\\.toml$",
+             "\\.versions\\.toml$",
+             "(^|\\/)versions.props$",
+             "(^|\\/)versions.lock$"
+           ],
+           "timeout": 600,
+           "versioning": "gradle"
+         },
+         "gradle-wrapper": {
+           "fileMatch": ["(^|/)gradle/wrapper/gradle-wrapper\\.properties$"],
+           "versioning": "gradle"
+         },
+         "helm-requirements": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)requirements\\.yaml$"]
+         },
+         "helm-values": {
+           "commitMessageTopic": "helm values {{depName}}",
+           "fileMatch": ["(^|/)values\\.yaml$"],
+           "pinDigests": false
+         },
+         "helmfile": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)helmfile\\.yaml$"]
+         },
+         "helmsman": {"fileMatch": []},
+         "helmv3": {
+           "registryAliases": {"stable": "https://charts.helm.sh/stable"},
+           "commitMessageTopic": "helm chart {{depName}}",
+           "fileMatch": ["(^|/)Chart\\.yaml$"]
+         },
+         "hermit": {
+           "fileMatch": ["(^|/)bin/hermit$"],
+           "excludeCommitPaths": ["**/bin/hermit"],
+           "versioning": "hermit"
+         },
+         "homebrew": {
+           "commitMessageTopic": "Homebrew Formula {{depName}}",
+           "fileMatch": ["^Formula/[^/]+[.]rb$"]
+         },
+         "html": {
+           "fileMatch": ["\\.html?$"],
+           "versioning": "semver",
+           "digest": {"enabled": false},
+           "pinDigests": false
+         },
+         "jenkins": {"fileMatch": ["(^|/)plugins\\.(txt|ya?ml)$"]},
+         "jsonnet-bundler": {
+           "fileMatch": ["(^|/)jsonnetfile\\.json$"],
+           "datasource": "git-tags"
+         },
+         "kotlin-script": {"fileMatch": ["^.+\\.main\\.kts$"]},
+         "kubernetes": {"fileMatch": []},
+         "kustomize": {
+           "fileMatch": ["(^|/)kustomization\\.ya?ml$"],
+           "pinDigests": false
+         },
+         "leiningen": {"fileMatch": ["(^|/)project\\.clj$"], "versioning": "maven"},
+         "maven": {
+           "fileMatch": [
+             "(^|/|\\.)pom\\.xml$",
+             "^(((\\.mvn)|(\\.m2))/)?settings\\.xml$"
+           ],
+           "versioning": "maven"
+         },
+         "maven-wrapper": {
+           "fileMatch": ["(^|\\/).mvn/wrapper/maven-wrapper.properties$"],
+           "versioning": "maven"
+         },
+         "meteor": {"fileMatch": ["(^|/)package\\.js$"]},
+         "mint": {"fileMatch": ["(^|\\/)Mintfile$"]},
+         "mix": {"fileMatch": ["(^|/)mix\\.exs$"], "versioning": "hex"},
+         "nix": {
+           "fileMatch": ["(^|\\/)flake\\.nix$"],
+           "commitMessageTopic": "nixpkgs",
+           "commitMessageExtra": "to {{newValue}}",
+           "enabled": false
+         },
+         "nodenv": {"fileMatch": ["(^|/)\\.node-version$"], "versioning": "node"},
+         "npm": {
+           "fileMatch": ["(^|/)package\\.json$"],
+           "rollbackPrs": true,
+           "versioning": "npm",
+           "digest": {
+             "prBodyDefinitions": {
+               "Change": "{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}"
+             }
+           },
+           "prBodyDefinitions": {
+             "Change": "[{{#if displayFrom}}`{{{displayFrom}}}` -> {{else}}{{#if currentValue}}`{{{currentValue}}}` -> {{/if}}{{/if}}{{#if displayTo}}`{{{displayTo}}}`{{else}}`{{{newValue}}}`{{/if}}]({{#if depName}}https://renovatebot.com/diffs/npm/{{replace '/' '%2f' depName}}/{{{currentVersion}}}/{{{newVersion}}}{{/if}})"
+           }
+         },
+         "nuget": {
+           "fileMatch": [
+             "\\.(?:cs|fs|vb)proj$",
+             "\\.(?:props|targets)$",
+             "(^|\\/)dotnet-tools\\.json$",
+             "(^|\\/)global\\.json$"
+           ]
+         },
+         "nvm": {
+           "fileMatch": ["(^|/)\\.nvmrc$"],
+           "versioning": "node",
+           "pinDigests": false
+         },
+         "osgi": {"fileMatch": ["(^|/)src/main/features/.+\\.json$"]},
+         "pip-compile": {
+           "fileMatch": [],
+           "lockFileMaintenance": {
+             "enabled": true,
+             "branchTopic": "pip-compile-refresh",
+             "commitMessageAction": "Refresh pip-compile outputs"
+           }
+         },
+         "pip_requirements": {
+           "fileMatch": ["(^|/)([\\w-]*)requirements\\.(txt|pip)$"]
+         },
+         "pip_setup": {"fileMatch": ["(^|/)setup\\.py$"]},
+         "pipenv": {"fileMatch": ["(^|/)Pipfile$"]},
+         "poetry": {"fileMatch": ["(^|/)pyproject\\.toml$"]},
+         "pre-commit": {
+           "commitMessageTopic": "pre-commit hook {{depName}}",
+           "enabled": false,
+           "fileMatch": ["(^|/)\\.pre-commit-config\\.yaml$"],
+           "prBodyNotes": [
+             "Note: The `pre-commit` manager in Renovate is not supported by the `pre-commit` maintainers or community. Please do not report any problems there, instead [create a Discussion in the Renovate repository](https://github.com/renovatebot/renovate/discussions/new) if you have any questions."
+           ]
+         },
+         "pub": {"fileMatch": ["(^|/)pubspec\\.ya?ml$"], "versioning": "npm"},
+         "puppet": {"fileMatch": ["(^|\\/)Puppetfile$"]},
+         "pyenv": {"fileMatch": ["(^|/)\\.python-version$"], "versioning": "docker"},
+         "regex": {"pinDigests": false},
+         "ruby-version": {
+           "fileMatch": ["(^|/)\\.ruby-version$"],
+           "versioning": "ruby"
+         },
+         "sbt": {
+           "fileMatch": [
+             "\\.sbt$",
+             "project/[^/]*\\.scala$",
+             "project/build\\.properties$"
+           ],
+           "versioning": "ivy"
+         },
+         "setup-cfg": {"fileMatch": ["(^|/)setup\\.cfg$"], "versioning": "pep440"},
+         "swift": {
+           "fileMatch": ["(^|/)Package\\.swift"],
+           "versioning": "swift",
+           "rangeStrategy": "bump",
+           "pinDigests": false
+         },
+         "tekton": {"fileMatch": []},
+         "terraform": {
+           "commitMessageTopic": "Terraform {{depName}}",
+           "fileMatch": ["\\.tf$"],
+           "pinDigests": false
+         },
+         "terraform-version": {
+           "fileMatch": ["(^|/)\\.terraform-version$"],
+           "versioning": "hashicorp",
+           "extractVersion": "^v(?<version>.*)$"
+         },
+         "terragrunt": {
+           "commitMessageTopic": "Terragrunt dependency {{depName}}",
+           "fileMatch": ["(^|/)terragrunt\\.hcl$"]
+         },
+         "terragrunt-version": {
+           "fileMatch": ["(^|/)\\.terragrunt-version$"],
+           "versioning": "hashicorp",
+           "extractVersion": "^v(?<version>.+)$"
+         },
+         "tflint-plugin": {
+           "commitMessageTopic": "TFLint plugin {{depName}}",
+           "fileMatch": ["\\.tflint\\.hcl$"],
+           "extractVersion": "^v(?<version>.*)$"
+         },
+         "travis": {
+           "fileMatch": ["^\\.travis\\.yml$"],
+           "major": {"enabled": false},
+           "versioning": "node"
+         },
+         "velaci": {"fileMatch": ["(^|/)\\.vela\\.ya?ml$"]},
+         "woodpecker": {"fileMatch": ["^\\.woodpecker(?:\\/[^/]+)?\\.ya?ml$"]},
+         "logLevel": "debug",
+         "renovateUsername": "vaemsdev",
+         "repository": "vaemsdev/reno-py",
+         "errors": [],
+         "warnings": [],
+         "branchList": [],
+         "defaultBranch": "main",
+         "isFork": false,
+         "repoFingerprint": "c1f5bbce3169342206fb8099866bc97022ae57628ce52619f9734c309aa0091761d3b7ee1c6ab4945098d46ea34579954946ae874e12878057851c800ac9e55f",
+         "baseBranch": "main",
+         "repoIsOnboarded": true,
+         "renovateJsonPresent": true
+       },
+       "hostRules": [
+         {"timeout": 60000},
+         {
+           "matchHost": "api.github.com",
+           "token": "***********",
+           "username": "vaemsdev",
+           "hostType": "github",
+           "resolvedHost": "api.github.com"
+         }
+       ]
+ INFO: Dependency extraction complete (repository=vaemsdev/reno-py, baseBranch=main)
+       "stats": {
+         "managers": {
+           "dockerfile": {"fileCount": 1, "depCount": 1},
+           "npm": {"fileCount": 1, "depCount": 7},
+           "pip_requirements": {"fileCount": 1, "depCount": 1}
+         },
+         "total": {"fileCount": 3, "depCount": 9}
+       }
+ INFO: Repository finished (repository=vaemsdev/reno-py)
+       "cloned": true,
+       "durationMs": 24814
