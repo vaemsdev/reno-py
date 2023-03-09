@@ -1,6 +1,6 @@
 module.exports = {
     endpoint: 'https://api.github.com/',
-    token: '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',
+    token: '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',
     platform: 'github',
     logLevel: 'debug',
     onboardingConfig: {
@@ -15,9 +15,10 @@ module.exports = {
     requireConfig: false,
     "packageRules": [
         {
-            "matchDepTypes": ["devDependencies"],
-            "matchUpdateTypes": ["patch", "minor"],
-            "groupName": "Dependencies (non-major)"
+            "matchDepTypes": ["dependencies"],
+            "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
+            "groupName": "dependencies",
+            "semanticCommitType": "fix"
         }
     ]
 };
