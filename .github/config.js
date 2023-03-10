@@ -1,6 +1,6 @@
 module.exports = {
     endpoint: 'https://api.github.com/',
-    token: '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',
+    token: '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',
     platform: 'github',
     logLevel: 'debug',
     onboardingConfig: {
@@ -13,12 +13,20 @@ module.exports = {
     onboarding: false,
     printConfig: true,
     requireConfig: false,
+    recreateClosed: true,
     "packageRules": [
         {
             "matchDepTypes": ["dependencies"],
             "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
             "groupName": "dependencies",
             "semanticCommitType": "fix"
+        },
+        {
+            "groupName": "Flask packages",
+            "groupSlug": "flaskDep",
+            "matchPackageNames": [
+                "Flask"
+            ]
         }
     ]
 };
